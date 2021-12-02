@@ -1,11 +1,13 @@
+file=ex1
+src=src/${file}
+build=build/${file}
+all : ${build}
 
-all : ex-1
+${build}.o: ${src}.c
+	gcc -c ${src}.c -o ${build}.o
 
-ex1.o: ex1.c
-	gcc -c ex1.c
-
-ex1: ex1.o 
-	gcc ex1.o -o ex1
+${build_ex}: ${build_ex}.o 
+	gcc ${build}.o -o ${build}
 
 clean:
-	rm -f ${ex}  ${ex}.o
+	rm -f ${build}  ${build}.o
