@@ -1,1 +1,4 @@
 build/
+src/*.o
+ex1
+ex1b
