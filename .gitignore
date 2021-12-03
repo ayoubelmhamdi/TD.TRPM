@@ -1,4 +1,10 @@
 build/
-src/*.o
-ex1
-ex1b
+TD1/*.o
+TD1/ex1
+TD1/ex1b
+TD1/ex2
+TD1/ex3
+TD1/ex4
+TD1/ex5
+TD1/ex6
+TD1/ex7
