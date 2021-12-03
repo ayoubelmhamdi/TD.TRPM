@@ -1,13 +1,12 @@
-file=ex1
-src=src/${file}
-build=build/${file}
-all : ${build}
 
-${build}.o: ${src}.c
-	gcc -c ${src}.c -o ${build}.o
+objects =\
+				 src/ex1\
+				 src/ex1b
 
-${build_ex}: ${build_ex}.o 
-	gcc ${build}.o -o ${build}
+all: $(objects)
+
+$(objects): %: %.c
+	gcc -o $@ $<
 
 clean:
-	rm -f ${build}  ${build}.o
+	rm -f *.o build/*.o src/*.o ex1 build/ex1 src/ex1 ex1b build/ex1b src/ex1b
