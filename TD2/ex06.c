@@ -60,7 +60,7 @@ void multi_2_matrices(int n, int mat1[n][n], int mat2[n][n],int mat3[n][n]) {
     for (int j = 0; j < n; j++) {
       int sum = 0;
       for (int k = 0; k < n; k++) {
-        sum = sum + mat1[i][k] * mat2[k][i];
+        sum = sum + mat1[i][k] * mat2[k][j];
       }
       mat3[i][j] = sum;
     }
