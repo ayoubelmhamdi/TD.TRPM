@@ -9,8 +9,7 @@ int main() {
   printf("Donner les 2 valeurs de a b  \n");
   scanf("%d%d", &a, &b);
 
-  printf("--------------------------------\n");
-  printf(" les solution de %dx+%d=0 est :\n", a, b);
+  printf("\nles solution de %dx+%d=0 est :\n\t", a, b);
 
   if (a == 0 && b == 0) {
     printf(" S = R\n");
@@ -20,9 +19,7 @@ int main() {
     printf(" S= { 0 }\n");
   } else {
     printf(" S= { %.02f }\n",(float)-b/a);
-    printf("\nn'accept pas la virgure S= { %d }\n",-b/a); // fault de calcule : 2x-1=0
   }
 
-  printf("\n\n\n\n\n\n");
   return 0;
 }
