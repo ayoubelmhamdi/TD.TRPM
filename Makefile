@@ -4,7 +4,6 @@ objects =\
 				 TD2/ex04\
 				 TD2/ex05\
 				 TD2/ex06\
-				 TD2/ex07\
 				 TD1/ex01\
 				 TD1/ex01-b\
 				 TD1/ex02\
